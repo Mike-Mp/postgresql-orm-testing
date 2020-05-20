@@ -1,1 +1,1 @@
-"use strict";var express=require("express"),app=express();module.exports=app;
+"use strict";var _express=_interopRequireDefault(require("express"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}var app=(0,_express.default)();app.use(_express.default.json()),app.use(_express.default.urlencoded({extended:!1})),app.get("/",function(e,p){p.send({message:"Welcome to do api"})});var port=process.env.PORT||5e3;app.listen(port,function(){console.log("app is listening on port ".concat(port))});
